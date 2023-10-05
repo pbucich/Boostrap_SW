@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bs-StarWars</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#columnas">Columnas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- inicio de Columnas -->
+    <section class="my-5">
+      <h2 id="columnas" class="text-center text-info bg-dark">Columnas</h2>
+      <div class="container border border-primary text-center">
+
+        <div class="row align-items-start border border-info m-3 p-2">
+          <div class="col border border-danger">1</div>
+          <div class="col border border-success">2</div>
+          <div class="col border border-secondary">3</div>
+          <div class="col border border-danger">4</div>
+          <div class="col border border-success">5</div>
+          <div class="col border border-secondary">6</div>
+        </div>
+
+        <div class="row align-items-start border border-info m-3 p-2">
+          <div class="col-1 border border-danger">1</div>
+          <div class="col-5 border border-success">2</div>
+          <div class="col-5 border border-secondary">3</div>
+          <div class="col-1 border border-secondary">4</div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- inicio de Carousel -->
+    <section class="my-5 mx-auto col-6">
+      <h2 class="text-center text-danger-emphasis">Carousel / Calesita</h2>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/SW1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/SW2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/SW3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+    <!-- inicio de Cards Group -->
+    <section class="my-5">
+      <h2 class="text-center text-danger">Card Group / Grupo de Cartas</h2>
+      <div class="card-group">
+        <div class="card">
+          <img src="assets/img/SW4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-danger">Soldados Imperiales</span>
+            <h5 class="card-title">Stormtrooper</h5>
+            <p class="card-text">En el universo ficticio de Star Wars, los Stormtroopers, Tropas de Asalto o Soldados Imperiales son las tropas de asalto del Imperio Galáctico, aunque también se deriva este nombre a los soldados de la Primera Orden. De su nombre proviene la expresión de «efecto Stormtrooper»</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/SW5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-primary">Sable-Jedi</span>
+            <span class="badge text-bg-danger">Sable-Sith</span>
+            <h5 class="card-title">Sable de luz</h5>
+            <p class="card-text">Es un arma ficticia que aparece principalmente en el mundo de Star Wars. Azul para los caballeros jedi. Rojo para los sith.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/SW6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-success">BB-8</span>
+            <span class="badge text-bg-warning">C3PO</span>
+            <span class="badge text-bg-primary">R2-D2</span>
+            <h5 class="card-title">Droides</h5>
+            <p class="card-text">En la franquicia Star Wars, el término droide hace referencia a un robot ficticio que posee cierto grado de inteligencia artificial. El término es una forma abreviada de "androide".</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5">
+      <h2 class="text-center text-primary">Card Horizontal</h2>
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/SW8.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Dia de star wars</h5>
+              <p class="card-text">No había mejor día que el 4 de mayo para el festejo, pues el eslogan de la conmemoración es un juego de palabras que une tanto la fecha como una de las frases clásicas de Star Wars:
+                "May the force be with you" (frase icónica de los Jedis desde la primera película de la saga, llamada Star Wars IV: A New Hope, de 1977; en español significa "Que la fuerza te acompañe")</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border border-4 rounded col-6 mx-auto">
+      <h2 class="text-center text-warning bg-dark">Formulario Suscripcion</h2>
+      <form>
+        <div class="mb-3 col-9 mx-auto">
+          <label for="exampleInputEmail1" class="form-label text-center text-success">Correo Electronico</label>
+          <input type="email" class="form-control text-success" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+        </div>
+        <div class="mb-3 col-9 mx-auto mx-auto">
+          <label for="exampleInputPassword1" class="form-label text-success">Clave</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3 col-9 mx-auto">
+          <label for="exampleFormControlTextarea1" class="form-label text-success">Ingrese su comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+         </div> 
+        <div class="d-grid gap-2 col-3 mx-auto">
+         <button type="submit" class="btn btn-primary">Enviar</button>
+         <button type="reset" class="btn btn-success">Limpiar</button>
+         </div>
+      </form>
+
+    </section>
+
+    <footer class="mb-3 col-9 mx-auto">
+      <div class="row">
+        <div class="col">
+          <a href="#">Inicio</a>
+        </div>
+        <div class="col">
+          <a href="#"></a>Fotos</a>
+        </div>
+        <div class="col">
+          <a href="#"></a>Comprar Tickets</a>
+        </div>
+        <div class="col">
+          <a href="#"></a>Iniciar Sesion</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
